@@ -116,11 +116,13 @@ img{
 .site-header {
   background-color: var(--bg-milky-light);
   background-image: url("../img/alfred.png"),
-  url("../img/cup-coffee.jpg");
+  url("../img/cup-coffee.jpg"),
+  url("../img/bg-header.png");
   background-repeat: no-repeat;
-  background-size: auto, contain;
+  background-size: auto, contain, cover;
   background-position: left calc(50% - 40px) top 20px,
-  left calc(50% + 355px) top calc(50% + 104px);
+  left calc(50% + 355px) top calc(50% + 104px),
+  center center;
 }
 
 .header-content{
@@ -187,4 +189,18 @@ img{
   margin-top: 0;
   margin-bottom: 34px;
   color: var(--text-color);
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .site-header{
+    background-image:  url(../img/alfred@2x.png),
+    url(../img/cup-coffee@2x.jpg);
+  }
 }
