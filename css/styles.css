@@ -27,11 +27,15 @@
 }
 
 :root{
-  --bg-color: #fff;
+  --bg-milky-dark: #C99B67;
+  --bg-milky-light: #F3D7B7;
+  --bg-green: #0A775F;
+  --outline-color: var(--bg-green);
+  --bg-grey: #E5E5E5;
+  --bg-white: #F8F8F2;
   --text-color: #000;
-  --brand-color: #123;
-  --outline-color: var(--brand-color);
-  --site-font: "Arial", sans-serif;
+  --color-text: #333;
+  --site-font-family: "Roboto", "Arial", sans-serif;
 }
 
 html{
@@ -56,12 +60,12 @@ body{
   padding: 0;
   margin: 0;
   flex-direction: column;
-  font-family: var(--site-font);
+  font-family: var(--site-font-family);
   font-size: 16px;
   line-height: 1.5;
   height: 100%;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #fff;
+  color: var(--color-text);
 }
 
 img{
@@ -72,7 +76,7 @@ img{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -84,11 +88,16 @@ img{
 }
 
 .button{
-  padding: 10px;
+  padding: 16px 24px;
   border: none;
-  border-radius: 2px;
-  background-color: var(--brand-color);
+  border-radius: 100px;
+  background-color: var(--bg-green);
   color: #fff;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
 }
 
 .button:hover{
@@ -105,11 +114,19 @@ img{
 }
 
 .site-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: var(--brand-color);
+  background-color: var(--bg-milky-light);
+  background-image: url("../img/alfred.png"),
+  url("../img/cup-coffee.jpg");
+  background-repeat: no-repeat;
+  background-size: auto, contain;
+  background-position: left calc(50% - 40px) top 20px,
+  left calc(50% + 355px) top calc(50% + 104px);
 }
 
+.header-content{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
 
 .logo-link {
   display: block;
@@ -118,6 +135,8 @@ img{
 
 .logo-img {
   display: block;
+  width: 235px;
+  height: 24px;
 }
 
 .site-nav-lists {
@@ -127,10 +146,45 @@ img{
 }
 
 .site-nav-item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .site-nav-link {
   text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.site-nav-link:hover{
+  color: var(--bg-green);
+}
+
+.site-nav-link:active{
+  opacity: 0.6;
+}
+
+.promo {
+  padding-top: 111px;
+  padding-bottom: 249px;
+  max-width: 447px;
+  margin-left: 100px;
+}
+
+.promo-header {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: var(--text-color);
+}
+
+.promo-text {
+  margin-top: 0;
+  margin-bottom: 34px;
   color: var(--text-color);
 }
