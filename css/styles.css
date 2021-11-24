@@ -391,6 +391,44 @@ img{
   line-height: 28px;
 }
 
+.site-footer{
+  padding-top: 68px;
+  padding-bottom: 68px;
+  background-color: var(--bg-milky-light);
+}
+
+.social-lists {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 331px;
+  list-style: none;
+}
+
+.social-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.social-link {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.social-link:hover{
+  color: var(--bg-green);
+}
+
+.social-link:active{
+  opacity: 0.8;
+}
+
+.social-link svg{
+  display: block;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
