@@ -225,7 +225,7 @@ img{
   font-size: 50px;
   line-height: 59px;
   text-align: center;
-  text-decoration: uppercase;
+  text-transform: uppercase;
   color: var(--text-color);
 }
 
