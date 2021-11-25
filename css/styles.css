@@ -125,6 +125,7 @@ img{
 
 .site-header{
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 .site-text{
@@ -190,6 +191,7 @@ img{
 }
 
 .promo {
+  margin-top: 0;
   padding-top: 111px;
   padding-bottom: 249px;
   max-width: 464px;
@@ -205,6 +207,7 @@ img{
 }
 
 .promo-text {
+  margin-top: 0;
   margin-bottom: 34px;
   color: var(--text-color);
 }
@@ -342,8 +345,9 @@ padding: 50px 31px 80px 30px;
 .item-intro{
   width: calc(100%/3 - 20px);
   list-style: none;
-  padding: 70px 20px 40px 0;
-  background-image: linear-gradient(to bottom, transparent 150px, #F8F8F2 150px);
+  padding: 0;
+  padding-right: 20px;
+  background-image: linear-gradient(to bottom, transparent 80px, #F8F8F2 80px);
 }
 
 .item-intro::before{
@@ -363,7 +367,12 @@ padding: 50px 31px 80px 30px;
   line-height: 35px;
 }
 
+.heading{
+  color: #fff;
+}
+
 .intro-content{
+  max-width: 385px;
   margin-left: 20px;
 }
 
@@ -379,16 +388,18 @@ padding: 50px 31px 80px 30px;
 }
 
 .heading-intro{
-  max-width: 231px;
   font-size: 40px;
   line-height: 47px;
 }
 
 .text-intro {
-  max-width: 377px;
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
+}
+
+.text-width{
+  max-width: 377px;
 }
 
 .site-footer{
