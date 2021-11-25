@@ -277,9 +277,9 @@ padding: 50px 31px 80px 30px;
 .intro-site{
   background-color: var(--bg-green);
   padding: 50px 31px 50px 30px;
-  background-image: url("../img/bg-green.png");
-  background-position: center center;
-  background-size: cover;
+  background-image: url("../img/but-first-coffee.png"), url("../img/bg-green.png");
+  background-position: right+80px top+40px, center center;
+  background-size: auto, cover;
   background-repeat: no-repeat;
 }
 
