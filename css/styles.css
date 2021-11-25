@@ -363,6 +363,10 @@ padding: 50px 31px 80px 30px;
   line-height: 35px;
 }
 
+.intro-content{
+  margin-left: 20px;
+}
+
 .number{
   margin-top: 0;
   margin-bottom: 45px;
@@ -375,14 +379,12 @@ padding: 50px 31px 80px 30px;
 }
 
 .heading-intro{
-  margin-left: 20px;
   max-width: 231px;
   font-size: 40px;
   line-height: 47px;
 }
 
 .text-intro {
-  margin-left: 20px;
   max-width: 377px;
   font-weight: normal;
   font-size: 18px;
