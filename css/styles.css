@@ -403,8 +403,8 @@ padding: 50px 31px 80px 30px;
 }
 
 .site-footer{
-  padding-top: 68px;
-  padding-bottom: 68px;
+  padding-top: 65px;
+  padding-bottom: 65px;
   background-color: var(--bg-milky-light);
   background-image: url("../img/bg-header.png");
   background-position: 0 0;
